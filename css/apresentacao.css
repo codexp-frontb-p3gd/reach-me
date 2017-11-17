@@ -1,0 +1,37 @@
+/* ----------- SECTION APRESENTAÇÃO ----------- */
+.apresentacao {
+    height: 700px;
+    background: lightblue;
+}
+
+.apresentacao * {
+    font-family: Open Sans, sans-serif;
+}
+
+.apresentacao__conteudo {
+    /* configurações do flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 350px; /* tamanho mobile */
+    padding: 0 20px;
+    background: lightsteelblue;
+}
+
+.apresentacao__titulo {
+    font-size: 2rem;
+    width: 50%;
+    margin: 0;
+}
+
+.apresentacao__subtitulo {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #666;
+}
+
+.apresentacao__titulo, .apresentacao__subtitulo {
+    text-align: center;
+}
