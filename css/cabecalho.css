@@ -64,7 +64,7 @@
         margin: 2rem;
     }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 990px) {
     .cabecalho {
         justify-content: space-between;
     }
@@ -80,7 +80,7 @@
     }    
     .cabecalho__navbar li {
         display: inline;
-        margin: 1rem;
+        margin: 0.6rem;
     }
     .cabecalho__navbar a {
         text-transform: uppercase;
