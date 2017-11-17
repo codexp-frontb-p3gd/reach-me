@@ -1,7 +1,18 @@
+body {
+    background: url('http://lorempixel.com/1366/768/');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 /* ----------- SECTION APRESENTAÇÃO ----------- */
 .apresentacao {
-    height: 700px;
-    background: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+
+    background-size: contain;
 }
 
 .apresentacao * {
@@ -16,13 +27,10 @@
     align-items: center;
 
     height: 350px; /* tamanho mobile */
-    padding: 0 20px;
-    background: lightsteelblue;
 }
 
 .apresentacao__titulo {
     font-size: 2rem;
-    width: 50%;
     margin: 0;
 }
 
@@ -34,4 +42,51 @@
 
 .apresentacao__titulo, .apresentacao__subtitulo {
     text-align: center;
+}
+
+.apresentacao__link {
+    padding: 0.75rem 2rem;
+
+    border-radius: 25px;
+    text-decoration: none;
+    background: #018AF5;
+    color: white;
+}
+
+.apresentacao__link:visited {
+    color: white;
+}
+
+.apresentacao__imagem {
+    width: 100%;
+}
+
+.apresentacao__imagem img {
+    width: 100%;
+    vertical-align: middle; /* propriedade que tira a pequena margin inferior da picture */
+}
+
+@media screen and (min-width: 740px)
+{
+    .apresentacao__titulo {
+        font-size: 3rem;
+    }
+
+    .apresentacao__subtitulo {
+        font-size: 1.2rem;
+    }
+}   
+
+@media screen and (min-width: 992px)
+{
+    body {
+        background: url('http://lorempixel.com/1920/1080/');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .apresentacao__imagem {
+        width: 75%;
+    }
+
 }
