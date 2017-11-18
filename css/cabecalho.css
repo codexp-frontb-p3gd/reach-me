@@ -1,14 +1,63 @@
-* {
+body {
+    background: white;
+}
+/* ----------- SECTION APRESENTAÇÃO ----------- */
+.apresentacao {
+    background: url('http://lorempixel.com/1366/768/');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background-size: contain;
+}
+.apresentacao * {
+    font-family: Open Sans, sans-serif;
+}
+.apresentacao__conteudo {
+    /* configurações do flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px; /* tamanho mobile */
+}
+.apresentacao__titulo {
+    font-size: 2rem;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+}
+.apresentacao__subtitulo {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #666;
+}
+.apresentacao__titulo, .apresentacao__subtitulo {
+    text-align: center;
+}
+.apresentacao__link {
+    padding: 0.75rem 2rem;
+
+    border-radius: 25px;
+    text-decoration: none;
+    background: #018AF5;
+    color: white;
+}
+.apresentacao__link:visited {
+    color: white;
+}
+.apresentacao__imagem {
+    width: 100%;
+}
+.apresentacao__imagem img {
+    width: 100%;
+    vertical-align: middle; /* propriedade que tira a pequena margin inferior da picture */
 }
 .cabecalho {
     display: flex;
     justify-content: space-between;  
     height: 5rem;
-    border-bottom: 1px solid lightgray;
 }
 .cabecalho__logo {
     align-self: center;
@@ -27,7 +76,13 @@
     font-size: 2rem;
     color: lightgray;
 }
-@media screen and (min-width: 740px) {
+@media screen and (min-width: 768px) {
+    .apresentacao__titulo {
+        font-size: 3rem;
+    }
+    .apresentacao__subtitulo {
+        font-size: 1.2rem;
+    }
     .cabecalho {
         height: 6rem;
         justify-content: flex-end;
@@ -64,7 +119,15 @@
         margin: 2rem;
     }
 }
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 992px) {
+    .apresentacao {
+        background: url('http://lorempixel.com/1920/1080/');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .apresentacao__imagem {
+        width: 75%;
+    }
     .cabecalho {
         justify-content: space-between;
     }
