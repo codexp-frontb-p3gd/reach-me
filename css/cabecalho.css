@@ -143,7 +143,7 @@ body {
     }    
     .cabecalho__navbar li {
         display: inline;
-        margin: 0.6rem;
+        margin: 0.4rem;
     }
     .cabecalho__navbar a {
         text-transform: uppercase;
