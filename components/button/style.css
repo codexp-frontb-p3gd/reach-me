@@ -1,0 +1,37 @@
+/* vv INFO: DEFAULT CSS, DO NOT COPY INTO PRINCIPAL PROJECT vv */
+
+* {
+    font-family: Open Sans;
+}
+
+body {
+    margin: 20px;
+}
+
+/* ^^ INFO: DEFAULT CSS, DO NOT COPY INTO PRINCIPAL PROJECT ^^ */
+
+
+/* ------ BASE BUTTON ------- */
+.button {
+    padding: 0.5rem 2rem;
+
+    border-radius: 25px;
+    text-decoration: none;
+    background: transparent;
+}
+
+/* --- VARIATIONS ---  */
+.button--primary {
+    color: white;
+    background: #0089F5;
+}
+
+.button--outline {
+    color: #0089F5;
+    border: 1px solid #666;
+}
+
+.button--secondary {
+    color: white;
+    background: #363F48;
+}
