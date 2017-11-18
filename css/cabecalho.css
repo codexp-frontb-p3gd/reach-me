@@ -2,17 +2,6 @@ body {
     background: white;
 }
 /* ----------- SECTION APRESENTAÇÃO ----------- */
-.apresentacao {
-    background: url('http://lorempixel.com/1366/768/');
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    background-size: contain;
-}
 .apresentacao * {
     font-family: Open Sans, sans-serif;
 }
@@ -77,6 +66,26 @@ body {
     color: lightgray;
 }
 @media screen and (min-width: 768px) {
+    .apresentacao {
+        background: url('http://lorempixel.com/1366/768/');
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        background-size: contain;
+    }
+    .apresentacao__imagem {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        background-size: contain;
+    }
     .apresentacao__titulo {
         font-size: 3rem;
     }
@@ -124,9 +133,21 @@ body {
         background: url('http://lorempixel.com/1920/1080/');
         background-size: cover;
         background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        background-size: contain;
     }
     .apresentacao__imagem {
         width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        background-size: contain;
     }
     .cabecalho {
         justify-content: space-between;
