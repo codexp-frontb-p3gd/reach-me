@@ -1,15 +1,10 @@
-/* vv INFO: DEFAULT CSS, DO NOT COPY INTO PRINCIPAL PROJECT vv */
-
 * {
     font-family: Open Sans;
 }
 
 body {
-    margin: 20px;
+    margin: 0;
 }
-
-/* ^^ INFO: DEFAULT CSS, DO NOT COPY INTO PRINCIPAL PROJECT ^^ */
-
 
 /* ------ BASE BUTTON ------- */
 .button {
