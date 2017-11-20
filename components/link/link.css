@@ -1,0 +1,17 @@
+body {
+    background-color: burlywood;
+}
+
+.reach-me-link {
+    font-family: Open Sans, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.reach-me-link--white {
+    color: white;
+}
+
+.reach-me-link--blue {
+    color: #4097f1;
+}
