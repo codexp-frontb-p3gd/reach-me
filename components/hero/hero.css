@@ -5,3 +5,107 @@
 body {
     margin: 0;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cabecalho {
+    display: flex;
+    justify-content: space-between;  
+    height: 5rem;
+    border-bottom: 1px solid lightgray;
+}
+.cabecalho__logo {
+    align-self: center;
+    margin: 1rem;
+    color: dodgerblue;
+}
+.cabecalho__navbar {
+    display: none;
+}
+.cabecalho__signup {
+    display: none;
+}
+.cabecalho__hamburguer-menu {
+    align-self: center;
+    margin: 1rem;
+    font-size: 2rem;
+    color: lightgray;
+}
+
+@media screen and (min-width: 740px) {
+    .cabecalho {
+        height: 6rem;
+        justify-content: flex-end;
+    }
+    .cabecalho__logo {
+        flex-grow: 1;
+        margin-left: 2rem;
+    }
+    .cabecalho__signup {
+        display: inline-block;
+        align-self: center;
+    }
+    .cabecalho__signup__button-login {
+        width: 10rem;
+        border-radius: 6rem;
+        border: 1px solid lightgray;
+        padding: 1rem 2rem;
+        text-decoration: none;
+        font-weight: bolder;
+        color: gray;
+        background-color: white;
+    }
+    .cabecalho__signup__button-getstarted {
+        width: 10rem;
+        border-radius: 6rem;
+        border: 1px solid lightgray;
+        padding: 1rem 2rem;
+        text-decoration: none;
+        font-weight: bolder;
+        color: dodgerblue;
+        background-color: white;
+    }
+    .cabecalho__hamburguer-menu {
+        margin: 2rem;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .cabecalho {
+        justify-content: space-between;
+    }
+    .cabecalho__logo {
+        flex-grow: 0;
+    }
+    .cabecalho__navbar {
+        display: inline-block;
+        align-self: center;
+    }
+    .cabecalho__navbar ul {
+        list-style: none;
+    }    
+    .cabecalho__navbar li {
+        display: inline;
+        margin: 0.6rem;
+    }
+    .cabecalho__navbar a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: gray;
+    }
+    .cabecalho__navbar li:hover {
+        padding-bottom: 2.4rem;
+        border-bottom: 2px solid dodgerblue;
+        font-weight: bolder;
+    }
+    .cabecalho__signup__button-getstarted {
+        margin-right: 2rem;
+    }
+    .cabecalho__hamburguer-menu {
+        display: none;
+    }
+}
