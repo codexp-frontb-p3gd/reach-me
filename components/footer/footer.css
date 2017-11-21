@@ -37,8 +37,15 @@ body {
 
 .footer__actions__further-info li {
     padding-top: 1em;
-    color: #ddd;
+    
 }
+
+.footer__actions__further-info > a, a:link, a:visited, a:hover, a:active {
+    color: #ddd;
+    text-decoration: none;
+    font-weight: normal;
+}
+
 
 .footer__actions__social-facebook, .footer__actions__social-twitter{
     width: 15px;
