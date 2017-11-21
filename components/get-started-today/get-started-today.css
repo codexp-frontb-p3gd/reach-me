@@ -8,14 +8,14 @@ body {
 }
 
 .get-started {
-    color: white;
-    text-align: center;
     margin: 5rem 0;
+    text-align: center;
+    color: white;
 }
 
 .get-started__title {
-    font-weight: 600;
     margin: 0;
+    font-weight: 600;
 }
 .get-started__text {
     margin: 1rem 0;
