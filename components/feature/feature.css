@@ -5,3 +5,125 @@
 body {
     margin: 0;
 }
+
+.feature {
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 3%;
+}
+
+.feature-box {
+    width: 100%;
+}
+
+.feature-lighter-gray {
+	background-color: #eeeeee;
+}
+
+.feature h2 {
+    color: #000000;
+    font-weight: 400;
+}
+
+.feature p {
+    color: #666666;
+    font-size: 13px;
+}
+
+.feature p > a {
+    color: blue;
+    text-decoration: none;
+}
+
+.feature p > a:hover {
+    opacity: 0.7;
+}
+
+.feature button {
+    border: none;
+    background-color: blue;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 2% 4%;
+    border-radius: 30px;
+}
+
+.feature button:hover {
+    opacity: 0.7;
+}
+
+.feature-box__imagem {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.feature-box__imagem img {
+    width: 100%;
+    margin-left: 40%;
+}
+
+.feature-reverse .feature-box__imagem img {
+    margin-left: -20%;
+    margin-top: 20px;
+}
+
+.feature-gray-02 .feature-box__imagem img {
+    margin-left: 0%;
+}
+
+.feature-gray {
+	background-color: #E0E7ED;
+}
+
+	@media only screen and (min-width: 769px) {
+
+		.feature {
+		    -webkit-flex-direction: row;
+		    flex-direction: row;
+		}
+
+		.feature-reverse {
+		    -webkit-flex-direction: row-reverse;
+		    flex-direction: row-reverse;
+		}
+
+		.feature-box__imagem img {
+		    margin-left: 20%;
+		}
+
+		.feature-lighter-gray-02 .feature-box__imagem img {
+		    margin-left: 40%;
+		}
+
+		.feature-reverse .feature-box__imagem img {
+		    margin-left: -40%;
+		}
+
+	}
+
+	@media only screen and (min-width: 993px) {
+
+		.feature-box__imagem img,
+		.feature-lighter-gray-02 .feature-box__imagem img {
+		    margin-left: 0%;
+		}
+
+		.feature-reverse .feature-box__imagem img {
+		    margin-left: -20% !important;
+		}
+
+		.feature-gray-02 .feature-box__imagem img {
+		    margin-left: 0% !important;
+		}
+
+		.feature-gray-02 .feature-box__texto {
+		    box-sizing: border-box;
+		    padding-left: 10%;
+		}
+
+	}
