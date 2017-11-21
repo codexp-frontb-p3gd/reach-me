@@ -30,3 +30,11 @@ body {
     color: white;
     background: #363F48;
 }
+
+@media only screen and (max-width: 996px)
+{
+    .button {
+        padding: 0.25rem 1rem;
+        font-size: .9rem;
+    }
+}
