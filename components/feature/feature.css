@@ -1,5 +1,6 @@
 * {
-    font-family: Open Sans;
+	font-family: Open Sans;
+	/* filter: invert(100%); */
 }
 
 body {
@@ -80,6 +81,14 @@ body {
 	background-color: #E0E7ED;
 }
 
+#nike {
+	width: 10%;
+}
+
+#imac-nopadding {
+	padding-left: 0; /* não nos orgulhamos disso */
+}
+
 	@media only screen and (min-width: 769px) {
 
 		.feature {
@@ -127,3 +136,5 @@ body {
 		}
 
 	}
+
+	

@@ -4,13 +4,14 @@
 
 body {
     margin: 0;
-    background-color: #0089F5;
+    
 }
 
 .get-started {
     margin: 5rem 0;
     text-align: center;
     color: white;
+    background-color: #0089F5;
 }
 
 .get-started__title {
