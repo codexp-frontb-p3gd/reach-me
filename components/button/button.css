@@ -9,7 +9,7 @@ body {
 /* ------ BASE BUTTON ------- */
 .button {
     padding: 0.5rem 2rem;
-
+    display: inline-block;
     border-radius: 25px;
     text-decoration: none;
     background: transparent;
