@@ -80,7 +80,7 @@ body {
 
 @media screen and (min-width: 996px){
     .footer {
-        justify-content: space-around;
+        justify-content: space-evenly;
      }
 
 }
