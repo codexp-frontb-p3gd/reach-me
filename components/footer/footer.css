@@ -6,19 +6,19 @@ body {
     margin: 0;
 }
 
-.page-footer {
+.footer {
     background-color: #444;
     text-align: center;
 }
 
-.logo-header {
+.footer__logo__header {
     color: #eee;
     padding: 1em 0 0 0;
     margin: 0;
     font-size: 26px;
 }
 
-.logo-text {
+.footer__logo__text {
     color: #999;
     margin: 0 0 0.5em 0;
     font-weight: 600;
@@ -26,7 +26,7 @@ body {
 }
 
 
-.further-info {
+.footer__actions__further-info {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -36,12 +36,12 @@ body {
 
 }
 
-.further-info li {
+.footer__actions__further-info li {
     padding-top: 1em;
     color: #ddd;
 }
 
-.social-media-facebook, .social-media-twitter{
+.footer__actions__social-facebook, .footer__actions__social-twitter{
     width: 15px;
     height: 15px;
     padding: 1px;
@@ -51,28 +51,28 @@ body {
 }
 
 @media screen and (min-width: 768px){
-    .page-footer{
+    .footer{
         display: flex;
         flex-flow: row;
         align-content: center;
         justify-content: space-between;
      }
 
-    .logo {
+    .footer__logo {
         margin-left: 1.5em;
     }
-    .footer-actions {
+    .footer__actions {
         display: flex;
         align-items: center;
     }
-    .further-info {
+    .footer__actions__further-info {
         margin-right: 20px;
     }
-    .further-info li {
+    .footer__actions__further-info li {
         display: inline;
         margin-right: 10px;        
     }
-    .social-media {
+    .footer__actions__social {
         margin-right: 20px;
     }
 
@@ -82,7 +82,7 @@ body {
 
     
 @media(min-width: 996px){
-    .page-footer {
+    .footer {
         justify-content: space-around;
      }
 
