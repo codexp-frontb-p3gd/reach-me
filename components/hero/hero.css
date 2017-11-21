@@ -12,9 +12,14 @@ body {
     background: transparent;
 }
 /* --- VARIATIONS ---  */
+.learn-more__button {
+    justify-content: center;
+}
 .button--primary {
     color: white;
     background: #0089F5; 
+    display: inline-block;
+    text-align: center;
 }
 .learn-more, p 
 {
@@ -36,14 +41,14 @@ body {
     font-size: 0.9em;
     color: #aaa;
 }
-.learn-more__images__center-md {
+.learn-more__image-facebbok-md {
     max-width: 100%;
 }
-.learn-more__images__left-md,
-.learn-more__images__left-lg,
-.learn-more__images__center-lg,
-.learn-more__images__right-md,
-.learn-more__images__right-lg {
+.learn-more__image-Instagram-md,
+.learn-more__image-Instagram-lg,
+.learn-more__image-facebook-lg,
+.learn-more__image-face-md,
+.learn-more__image-face-lg {
     display: none;
 }
 @media(min-width: 768px)
@@ -61,22 +66,22 @@ body {
         display: flex;
         justify-content: center;
     }
-    .learn-more__images__left-md,
-    .learn-more__images__right-md {
+    .learn-more__image-Instagram-md,
+    .learn-more__image-face-md {
         display: inline;
         max-width: 100%;
     }  
 } 
 @media(min-width: 992px)
 {
-    .learn-more__images__left-md,
-    .learn-more__images__center-md,
-    .learn-more__images__right-md {
+    .learn-more__image-Instagram-md,
+    .learn-more__image-facebook-md,
+    .learn-more__image-face-md {
         display: none;
     }
-    .learn-more__images__left-lg,
-    .learn-more__images__center-lg,
-    .learn-more__images__right-lg {
+    .learn-more__image-Instagram-lg,
+    .learn-more__image-facebook-lg,
+    .learn-more__image-face-lg {
         display: inline;
         max-width: 100%;
     }
