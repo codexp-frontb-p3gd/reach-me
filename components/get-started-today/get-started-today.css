@@ -4,4 +4,19 @@
 
 body {
     margin: 0;
+    background-color: #0089F5;
+}
+
+.get-started {
+    color: white;
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.get-started__title {
+    font-weight: 600;
+    margin: 0;
+}
+.get-started__text {
+    margin: 1rem 0;
 }
