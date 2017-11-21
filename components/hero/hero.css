@@ -1,104 +1,83 @@
 * {
+    font-family: Open Sans;
+}
+body {
+    margin: 20px;
+}
+/* ------ BASE BUTTON ------- */
+.button {
+    padding: 0.5rem 2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    background: transparent;
+}
+/* --- VARIATIONS ---  */
+.button--primary {
+    color: white;
+    background: #0089F5; 
+}
+.learn-more, p 
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Open Sans, Arial, Helvetica, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
-.cabecalho {
-    display: flex;
-    justify-content: space-between;  
-    height: 5rem;
-    border-bottom: 1px solid lightgray;
+.learn-more__titulo {
+    margin: 2em 0 0.2em 0;
+    text-align: center;
+    font-size: 1.9em;
+    color: #333;
 }
-.cabecalho__logo {
-    align-self: center;
-    margin: 1rem;
-    color: dodgerblue;
+.learn-more__description 
+{
+    margin: 1em;
+    text-align: center;
+    font-size: 0.9em;
+    color: #aaa;
 }
-.cabecalho__navbar {
+.learn-more__images__center-md {
+    max-width: 100%;
+}
+.learn-more__images__left-md,
+.learn-more__images__left-lg,
+.learn-more__images__center-lg,
+.learn-more__images__right-md,
+.learn-more__images__right-lg {
     display: none;
 }
-.cabecalho__signup {
-    display: none;
-}
-.cabecalho__hamburguer-menu {
-    align-self: center;
-    margin: 1rem;
-    font-size: 2rem;
-    color: lightgray;
-}
-
-@media screen and (min-width: 740px) {
-    .cabecalho {
-        height: 6rem;
-        justify-content: flex-end;
+@media(min-width: 768px)
+{
+    .learn-more__titulo {
+        font-size: 4.5em;
     }
-    .cabecalho__logo {
-        flex-grow: 1;
-        margin-left: 2rem;
+    br {
+        content: " ";
     }
-    .cabecalho__signup {
-        display: inline-block;
-        align-self: center;
+    .learn-more__description {
+        font-size: 1.5em;
     }
-    .cabecalho__signup__button-login {
-        width: 10rem;
-        border-radius: 6rem;
-        border: 1px solid lightgray;
-        padding: 1rem 2rem;
-        text-decoration: none;
-        font-weight: bolder;
-        color: gray;
-        background-color: white;
+    .learn-more__images {
+        display: flex;
+        justify-content: center;
     }
-    .cabecalho__signup__button-getstarted {
-        width: 10rem;
-        border-radius: 6rem;
-        border: 1px solid lightgray;
-        padding: 1rem 2rem;
-        text-decoration: none;
-        font-weight: bolder;
-        color: dodgerblue;
-        background-color: white;
-    }
-    .cabecalho__hamburguer-menu {
-        margin: 2rem;
-    }
-}
-
-@media screen and (min-width: 990px) {
-    .cabecalho {
-        justify-content: space-between;
-    }
-    .cabecalho__logo {
-        flex-grow: 0;
-    }
-    .cabecalho__navbar {
-        display: inline-block;
-        align-self: center;
-    }
-    .cabecalho__navbar ul {
-        list-style: none;
-    }    
-    .cabecalho__navbar li {
+    .learn-more__images__left-md,
+    .learn-more__images__right-md {
         display: inline;
-        margin: 0.6rem;
-    }
-    .cabecalho__navbar a {
-        text-transform: uppercase;
-        text-decoration: none;
-        color: gray;
-    }
-    .cabecalho__navbar li:hover {
-        padding-bottom: 2.4rem;
-        border-bottom: 2px solid dodgerblue;
-        font-weight: bolder;
-    }
-    .cabecalho__signup__button-getstarted {
-        margin-right: 2rem;
-    }
-    .cabecalho__hamburguer-menu {
+        max-width: 100%;
+    }  
+} 
+@media(min-width: 992px)
+{
+    .learn-more__images__left-md,
+    .learn-more__images__center-md,
+    .learn-more__images__right-md {
         display: none;
     }
-}
+    .learn-more__images__left-lg,
+    .learn-more__images__center-lg,
+    .learn-more__images__right-lg {
+        display: inline;
+        max-width: 100%;
+    }
+} 
