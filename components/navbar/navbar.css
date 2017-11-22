@@ -10,11 +10,6 @@
     height: 5rem;
     border-bottom: 1px solid lightgray;
 }
-.nav__logo {
-    align-self: center;
-    margin: 1rem;
-    color: dodgerblue;
-}
 .nav__navbar {
     display: none;
 }
@@ -27,44 +22,28 @@
     font-size: 2rem;
     color: lightgray;
 }
-<!-- .reach-me-link {
+.reach-me-link {
+    align-self: auto;
     font-family: Open Sans, sans-serif;
     font-weight: bold;
     text-decoration: none;
-}
-.reach-me-link--white {
-    color: white;
+    justify-content: flex-end;
 }
 .reach-me-link--blue {
     color: #4097f1;
-} -->
+}
 @media(min-width: 768px) {
     .nav {
         height: 6rem;
         justify-content: flex-end;
     }
-    .nav__logo {
-        flex-grow: 1;
-        margin-left: 2rem;
-    }
     .nav__signup {
         display: inline-block;
         align-self: center;
     }
-    .nav__signup__button-login {
-        width: 10rem;
-        border-radius: 6rem;
-        border: 1px solid lightgray;
-        padding: 1rem 2rem;
-        text-decoration: none;
-        font-weight: bolder;
-        color: gray;
-        background-color: white;
-    }
     /* ------ BASE BUTTON ------- */
     .button {
-        padding: 0.5rem 2rem;
-    
+        padding: 0.5rem 1rem;
         border-radius: 25px;
         text-decoration: none;
         background: transparent;
@@ -73,13 +52,6 @@
         color: #0089F5;
         border: 1px solid #666;
     }
-    * {
-        font-family: Open Sans;
-    }
-    
-    body {
-        margin: 20px;
-    }
     .nav__hamburguer-menu {
         margin: 2rem;
     }
@@ -87,9 +59,6 @@
 @media(min-width: 992px) {
     .nav {
         justify-content: space-between;
-    }
-    .nav__logo {
-        flex-grow: 0;
     }
     .nav__navbar {
         display: inline-block;
@@ -100,7 +69,7 @@
     }    
     .nav__navbar li {
         display: inline;
-        margin: 0.1rem;
+        margin: 0.4rem;
     }
     .nav__navbar a {
         text-transform: uppercase;
